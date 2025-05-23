@@ -124,10 +124,11 @@ Users can install VizHelper via pip:
 The following images demonstrate the difference between a default Matplotlib plot and the enhanced plot using VizHelper. The "after" image is result of Example 1 code shown above:
 
 **Before Enhancement**:  
-![before](pictures/before.png)
+![before](visualizations/default/bar chart/bar 2.png)
 
 **After Enhancement**:  
-![after](pictures/after.png)
+![after](visualizations/enhanced/bar chart/bar 2.png)
+![terminal](visualizations/enhanced/bar chart/terminal 2.png)
 
 
 The result in terminal:
