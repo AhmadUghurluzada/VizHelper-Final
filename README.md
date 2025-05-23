@@ -128,7 +128,6 @@ The following images demonstrate the difference between a default Matplotlib plo
 
 **After Enhancement**:  
 ![after](visualizations/enhanced/bar chart/bar 2.png)
-![terminal](visualizations/enhanced/bar chart/terminal 2.png)
 
 
 The result in terminal:
