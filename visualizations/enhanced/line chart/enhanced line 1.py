@@ -1,0 +1,28 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from vizhelper.enhance import enhance_plot
+
+# dataset used: https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset 
+data = pd.read_csv('data/retail_sales_dataset.csv')
+
+data['Date'] = pd.to_datetime(data['Date'])
+
+daily_sales = data.groupby('Date')['Total Amount'].sum()
+
+basic_sales = daily_sales.iloc[:30]
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.plot(basic_sales.index, basic_sales, marker='o', color='blue')
+ax.set_title('Daily Total Sales for One Month')
+
+enhance_plot(
+    ax,
+    interactive=True,
+    user_profile=None,
+    auto_legend=True,
+    auto_label=True,
+    openai_api_key=None,
+    config={"enable_legend_toggle": True}
+)
+
+plt.show()
